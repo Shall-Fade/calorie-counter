@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calorie counter</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Счетчик калорий</h1>
+    </header>
+
+    <section class="counter-section">
+        <div class="sex-container">
+            <h2>Пол</h2>
+            <div class="btn-block">
+                <!-- <button id="man" class="sex-btn">Мужской</button>
+                <button id="woman" class="sex-btn">Женский</button> -->
+                <div class="radio-block">
+                    <input id="man" type="radio" name="sex" value="man">
+                    <label for="man">Мужчина</label>
+                </div>
+                <div class="radio-block">
+                    <input id="woman" type="radio" name="sex" value="woman">
+                    <label for="woman">Женщина</label>
+                </div>
+            </div>
+        </div>
+        <div class="proportions-container">
+            <div class="proportions-block">
+                <h2>Возраст<span class="h2-span">лет</span></h2>
+                <input type="text" id="age">
+            </div>
+            <div class="proportions-block">
+                <h2>Рост<span class="h2-span">см</span></h2>
+                <input type="text" id="growth">
+            </div>
+            <div class="proportions-block">
+                <h2>Вес<span class="h2-span">кг</span></h2>
+                <input type="text" id="weight">
+            </div>
+        </div>
+        <div class="activity-container">
+            <h2>Физическая активность</h2>
+            <div class="activity-block">
+                <div class="activity activity-min">
+                    <input id="min" name="activity" type="radio" value="1"></input>
+                    <div>
+                        <label for="min">Минимальная</label>
+                        <p>Сидячая работа и нет физических нагрузок</p>
+                    </div>
+                </div>
+                <div class="activity activity-low">
+                    <input id="low" name="activity" type="radio" value="2"></input>
+                    <div>
+                        <label for="low">Низкая</label>
+                        <p>Редкие, нерегулярные тренировки, активность в быту</p>
+                    </div>
+                </div>
+                <div class="activity activity-average">
+                    <input id="average" name="activity" type="radio" value="3"></input>
+                    <div>
+                        <label for="average">Средняя</label>
+                        <p>Тренировки 3-5 раз в неделю</p>
+                    </div>
+                </div>
+                <div class="activity activity-high">
+                    <input id="high" name="activity" type="radio" value="4"></input>
+                    <div>
+                        <label for="high">Высокая</label>
+                        <p>Тренировки 6-7 раз в неделю</p>
+                    </div>
+                </div>
+                <div class="activity activity-super">
+                    <input id="super" name="activity" type="radio" value="5"></input>
+                    <div>
+                        <label for="super">Очень высокая</label>
+                        <p>Больше 6 тренировок в неделю и физическая работа</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="submit-btn">Рассчитать</button>
+    </section>
+
+    <section class="hide result-section"></section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
